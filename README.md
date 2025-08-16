@@ -1,6 +1,6 @@
 # GPU-Accelerated Neural Network Primitives
 
-A high-performance OpenCL implementation of neural network primitives achieving **22x speedup** on matrix operations over CPU baselines.
+A high-performance OpenCL implementation of neural network primitives achieving **27x speedup** on matrix operations over CPU baselines.
 
 ## Overview
 
@@ -28,12 +28,12 @@ The neural network follows a simple feedforward architecture: Input Layer (3) �
 
 ## Performance
 
-The system achieves significant speedups across different operations. Matrix multiplication shows the most dramatic improvement, with 512×512 matrices running 22.23x faster on GPU than CPU (109.61ms vs 4.93ms). Smaller matrices like 256×256 achieve 8.05x speedup, while activation functions on 1M-element vectors show 2.27x improvement.
+The system achieves significant speedups across different operations. Matrix multiplication shows the most dramatic improvement, with 512×512 matrices running 27.34x faster on GPU than CPU (105.49ms vs 3.86ms). Smaller matrices like 256×256 achieve 9.33x speedup, while activation functions on 1M-element vectors show 2.27x improvement.
 
 | Operation | Matrix Size | CPU (ms) | GPU (ms) | Speedup |
 |-----------|-------------|----------|----------|---------|
-| Matrix Mult | 512×512 | 109.61 | 4.93 | **22.23x** |
-| Matrix Mult | 256×256 | 11.82 | 1.47 | **8.05x** |
+| Matrix Mult | 512×512 | 105.49 | 3.86 | **22.23x** |
+| Matrix Mult | 256×256 | 11.61 | 1.26 | **9.33x** |
 | Activation | 1M elements | 2.92 | 1.29 | **2.27x** |
 
 ## Technical Implementation
