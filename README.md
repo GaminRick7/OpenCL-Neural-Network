@@ -2,6 +2,8 @@
 
 A high-performance OpenCL implementation of neural network primitives achieving **27x speedup** on matrix operations over CPU baselines.
 
+<img src="gpu.png" alt="GPU vs CPU Performance Benchmark" width="70%">
+
 ## Overview
 
 This project demonstrates GPU-accelerated neural network computation through optimized OpenCL kernels. The system implements core mathematical operations including matrix multiplication, addition, transpose, and activation functions (ReLU, Sigmoid, Tanh) with comprehensive performance benchmarking.
