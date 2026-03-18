@@ -26,7 +26,7 @@ The system achieves significant speedups across different operations. Matrix mul
 
 Built with C++17 and OpenCL 1.2, the system automatically detects available hardware and compiles kernels for optimal performance. The CMake build system ensures cross-platform compatibility across macOS, Linux, and Windows. Memory management is handled efficiently through GPU buffer allocation and optimized data transfer patterns.
 
-## Getting Started
+## Running
 
 ```bash
 mkdir build && cd build
@@ -55,7 +55,3 @@ This project showcases GPU programming expertise through OpenCL kernel developme
 **Current Status**: This is Stage 1 of a planned 3-stage development roadmap. The current implementation provides the mathematical foundation and GPU acceleration infrastructure needed for neural network computation, but is not yet a complete neural network training or inference system.
 
  Planned enhancements include implementing stochastic gradient descent for training, adding convolutional layers for image processing, and developing end-to-end neural network training capabilities.
-
----
-
-**Built with OpenCL, C++17, and GPU optimization techniques.**
